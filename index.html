@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprindle Support</title>
+<meta name="description" content="Help with Sprindle, the app for finding records and the shops that carry them.">
+<meta name="theme-color" content="#0D0F12">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#0D0F12;--surface:#16191E;--surface-2:#1F242A;--stroke:rgba(255,255,255,.08);--text:#F4EFE8;--text-2:rgba(244,239,232,.66);--text-3:rgba(244,239,232,.42);--accent:#F47A1F;--accent-soft:rgba(244,122,31,.14);--glow:rgba(244,122,31,.16);color-scheme:dark}
+@media (prefers-color-scheme:light){:root{--bg:#F7F3EE;--surface:#FFFFFF;--surface-2:#F1EBE3;--stroke:rgba(35,40,46,.1);--text:#1B1F24;--text-2:rgba(27,31,36,.68);--text-3:rgba(27,31,36,.45);--accent:#D9620B;--accent-soft:rgba(244,122,31,.12);--glow:rgba(244,122,31,.12);color-scheme:light}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(900px 500px at 85% -10%,var(--glow),transparent 60%),var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+nav{display:flex;align-items:center;gap:12px;margin-bottom:44px}
+nav .brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:800;font-stretch:expanded;font-size:19px;letter-spacing:-.01em}
+nav .brand:hover{text-decoration:none}
+nav .links{margin-left:auto;display:flex;gap:18px;font-size:14px;font-weight:600}
+nav .links a{color:var(--text-2)}nav .links a[aria-current]{color:var(--text)}
+.mark{width:34px;height:34px;flex:none;border-radius:9px}
+h1{font-size:clamp(32px,6vw,46px);line-height:1.08;font-weight:800;font-stretch:expanded;letter-spacing:-.02em;margin:0 0 14px}
+h2{font-size:20px;font-weight:750;margin:0 0 8px;letter-spacing:-.01em}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.lede{font-size:18px;color:var(--text-2);margin:0 0 30px;max-width:600px}
+.card{background:var(--surface);border:1px solid var(--stroke);border-radius:20px;padding:22px}
+.contact{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:44px}
+.contact p{margin:4px 0 0;color:var(--text-2);font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--accent);color:#0D0F12;font-weight:700;padding:12px 20px;border-radius:999px;white-space:nowrap}
+.btn:hover{text-decoration:none;filter:brightness(1.06)}
+.faq{display:grid;gap:10px;margin:18px 0 44px}
+details{background:var(--surface);border:1px solid var(--stroke);border-radius:16px;padding:0 18px}
+summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:650;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--text-3);font-weight:500;font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:var(--text-2)}
+.shops{background:linear-gradient(135deg,var(--accent-soft),transparent),var(--surface)}
+.shops p{color:var(--text-2);margin:0 0 14px}
+.summary{background:var(--accent-soft);border-radius:16px;padding:16px 18px;font-weight:550;margin:0 0 34px}
+section.legal{margin:0 0 26px}
+section.legal h2{display:flex;gap:12px;align-items:baseline;font-size:18px}
+section.legal h2 span{font:600 12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text-3)}
+section.legal p{margin:0 0 10px;color:var(--text-2)}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--stroke);display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--text-3)}
+footer a{color:var(--text-2)}
+@media (max-width:520px){.btn{margin-left:0}nav .links{gap:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="./"><svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#55657A"/><stop offset="1" stop-color="#3B4757"/></linearGradient><clipPath id="c"><rect width="1024" height="1024" rx="230"/></clipPath></defs><g clip-path="url(#c)"><rect width="1024" height="1024" fill="url(#g)"/><polygon points="500,150 564.6,297.8 667.3,241.2 679,357.9 837.4,327.1 752.5,464.3 857.4,516.6 768,592.5 883.4,705.4 722.2,713.4 738.7,829.5 625.5,799.1 598.1,958.1 500,830 413.8,909.5 374.5,799.1 228.1,866.9 277.8,713.4 163.4,687.7 232,592.5 93,510.6 247.5,464.3 203.7,355.5 321,357.9 309.5,197 435.4,297.8" fill="#F47A1F"/><path fill="#23282E" d="M150 1024 L150 960 C150 890 210 860 300 852 L340 848 L340 440 C340 368 384 330 452 330 L548 330 C616 330 652 372 652 440 L652 520 L712 606 L660 612 L672 646 L652 656 L652 694 C652 724 636 738 610 742 L600 742 L600 848 L700 852 C800 860 870 890 870 960 L870 1024 Z"/><path d="M424 556 Q 488 506 552 556 Q 488 606 424 556 Z" fill="#E6CFB2"/><circle cx="490" cy="556" r="11" fill="#23282E"/></g></svg>Sprindle</a><div class="links"><a href="" aria-current=page>Support</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a></div></nav>
+<div class="eyebrow">Support</div>
+<h1>How can we help?</h1>
+<p class="lede">Questions about Sprindle, a record that looks wrong, or a shop you'd love to see on the map: we read every message.</p>
+<div class="card contact"><div><h2>Get in touch</h2><p>Write to us and we'll get back to you.</p></div><a class="btn" href="mailto:mert.deryaasan@gmail.com?subject=Sprindle%20support">Email mert.deryaasan@gmail.com</a></div>
+<h2>Common questions</h2>
+<div class="faq"><details><summary>How does “In Stock Now” work?</summary><p>Shops either link their Discogs seller account, which Sprindle checks regularly, or keep their shelf up to date on Sprindle themselves. Each copy shows its price, condition and when it was last updated. Records sell fast, so it&#x27;s worth checking with the shop before you go.</p></details><details><summary>What does “Where to Dig” mean?</summary><p>When no shop has confirmed a copy, Sprindle suggests the shops that specialize in that record&#x27;s sound. It&#x27;s a pointer, not a promise that the record is in stock.</p></details><details><summary>Why can I play some tracks but not others?</summary><p>Previews come from Apple Music. Many records, especially vinyl-only pressings, aren&#x27;t on Apple Music, so those tracks have no play button.</p></details><details><summary>A new release is missing. When will it appear?</summary><p>New releases are added to producer profiles automatically, usually within a day of being listed in the music databases Sprindle draws on. If something is still missing after a few days, email us and we&#x27;ll take a look.</p></details><details><summary>How do I delete my account?</summary><p>Open Library, tap your initials at the top right, then Delete Account. Your account, follows and saved records are erased from your phone straight away.</p></details><details><summary>Does Sprindle track me or share my data?</summary><p>No. There are no ads or trackers, and your account stays on your device. The Privacy Policy has the details.</p></details></div>
+<div class="card shops"><h2>Run a record shop?</h2>
+<p>Put your records in front of diggers looking for them. List your stock in the Sprindle shop panel, or link your Discogs seller account and it syncs automatically.</p>
+<a href="mailto:mert.deryaasan@gmail.com?subject=Sprindle%20for%20Shops">Ask for shop access →</a></div>
+<footer><span>© 2026 Mert Ersin Deryaasan</span><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Service</a><a href="mailto:mert.deryaasan@gmail.com">mert.deryaasan@gmail.com</a></footer>
+</div>
+</body>
+</html>
